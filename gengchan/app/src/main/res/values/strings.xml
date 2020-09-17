@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Geng Chan</string>
+    <string name="scbpt_logo_big">SCBPT logo big</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forget_your_password">Forget your password ?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="scbpt_logo_horizontal">scbpt_logo_horizontal</string>
+    <string name="sign_up_detail">Please enter your email address to register with Geng Chan. Please follow the instruction send to your email.</string>
+    <string name="sent_link">Send Link</string>
+    <string name="title_activity_forgot_pass">ForgotPassActivity</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="forget_pass_detail">"Please enter your email address that you use for register with Geng Chan. You can change password in the link send to your email address"</string>
+    <string name="good_morning_pong">Good Morning Pongpanod Sankosik</string>
+    <string name="pongpanod_sankosik">Pongpanod Sankosik</string>
+    <string name="pongpanod_email">pongpanod.sankosik@scbprotect.co.th</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_password_detail">Please enter your existing password and then enter new password. </string>
+    <string name="scbprotect_email">firstname.lastname@scbprotect.co.th</string>
+    <string name="new_password">Enter new password</string>
+    <string name="old_password">Enter old password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="personal_stat">Personal Statistic</string>
+    <string name="challenge">Challenge</string>
+    <string name="ranking">Ranking</string>
+    <string name="trophy">Trophy</string>
+    <string name="state1">State#1</string>
+    <string name="state2">State#2</string>
+    <string name="state3">State#3</string>
+    <string name="state4">State#4</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="consent_message">We need your permission to record the voice during this session. We wish to use this voice recording to improve our performance in the future. Do (Customer name) allow us to record the voice.</string>
+    <string-array name="file_format">
+        <item>(all)</item>
+        <item>PDF</item>
+        <item>Image</item>
+        <item>VDO</item>
+    </string-array>
+    <string name="mock_consent_phone">0111111111</string>
+    <string name="mock_login_email">at@scbprotect.co.th</string>
+    <string name="mock_login_password">at</string>
+</resources>

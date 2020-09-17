@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <ImageView
+        android:id="@+id/forgetpass_iv_scbpt_horizontal1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/scbpt_logo_horizontal"
+        app:srcCompat="@drawable/scbpt_horizontal1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id="@+id/forgetpass_tv_heading"
+        style="@style/Heading_Text"
+        android:text="@string/forget_password" />
+
+    <TextView
+        android:id="@+id/forgetpass_tv_detail"
+        style="@style/Detail_Text"
+        android:text="@string/forget_pass_detail" />
+
+    <EditText
+        android:id="@+id/forgetpass_et_email"
+        style="@style/Edit_Text"
+        android:layout_margin="16dp"
+        android:autofillHints=""
+        android:hint="@string/scbprotect_email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/forgetpass_bt_sendlink"
+        style="@style/Main_button"
+        android:layout_margin="16dp"
+        android:text="@string/sent_link" />
+
+</LinearLayout>

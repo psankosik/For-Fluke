@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ChangePassActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <ImageView
+        android:id="@+id/changepass_iv_scbpt_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/scbpt_logo_horizontal"
+        app:srcCompat="@drawable/scbpt_horizontal1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id="@+id/changepass_tv_heading"
+        style="@style/Heading_Text"
+        android:text="@string/change_password"/>
+
+    <TextView
+        android:id="@+id/changepass_tv_detail"
+        style="@style/Detail_Text"
+        android:text="@string/change_password_detail" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/changepass_cv_login_fail"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorRed9"
+        android:visibility="gone"
+        tools:visibility="visible">
+        <TextView
+            android:id="@+id/changepass_tv_login_fail"
+            android:layout_width="448dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorRed0"
+            android:text="Incorect old password"
+            android:textSize="15sp"
+            android:textColor="@color/colorRed9"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/changepass_et_oldpass"
+        style="@style/Edit_Text"
+        android:layout_margin="16dp"
+        android:inputType="textPassword"
+        android:text="athip"
+        android:hint="@string/old_password"/>
+
+    <EditText
+        android:id="@+id/changepass_et_newpass"
+        style="@style/Edit_Text"
+        android:layout_margin="16dp"
+        android:inputType="textPassword"
+        android:text="athip"
+        android:hint="@string/new_password"/>
+
+    <EditText
+        android:id="@+id/changepass_et_confirm_newpass"
+        style="@style/Edit_Text"
+        android:layout_margin="16dp"
+        android:inputType="textPassword"
+        android:text="athip"
+        android:hint="@string/confirm_new_password"/>
+
+    <Button
+        android:id="@+id/changepass_bt_change_password"
+        style="@style/Main_button"
+        android:layout_margin="16dp"
+        android:text="@string/change_password"/>
+</LinearLayout>

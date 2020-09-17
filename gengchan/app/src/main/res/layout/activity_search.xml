@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".search.SearchActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/colorGrey2"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <EditText
+                android:id="@+id/search_et_to_search"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/search_bt_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_baseline_clear_24"
+                tools:visibility="visible"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="4dp"
+                android:background="@color/colorGrey5"
+                tools:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/search_bt_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_baseline_search_24" />
+            <!--
+            <TextView
+                android:id="@+id/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Test"/>
+             -->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/search_filter_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/search_state_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_cv_state1"
+                style="@style/Search_State_Tag"
+                app:cardBackgroundColor="@color/colorGrey3"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/search_tv_state1"
+                    style="@style/Search_State_Tag_Text"
+                    android:text="Crime" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_cv_state2"
+                style="@style/Search_State_Tag"
+                app:cardBackgroundColor="@color/colorGrey3"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/search_tv_state2"
+                    style="@style/Search_State_Tag_Text"
+                    android:text="Politic" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_cv_state3"
+                style="@style/Search_State_Tag"
+                app:cardBackgroundColor="@color/colorGrey3"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/search_tv_state3"
+                    style="@style/Search_State_Tag_Text"
+                    android:text="World" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_type_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_cv_pdf"
+                style="@style/Search_State_Tag"
+                app:cardBackgroundColor="@color/colorGrey3"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/search_tv_pdf"
+                    style="@style/Search_State_Tag_Text"
+                    android:text=".PDF" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_cv_img"
+                style="@style/Search_State_Tag"
+                app:cardBackgroundColor="@color/colorGrey3"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/search_tv_img"
+                    style="@style/Search_State_Tag_Text"
+                    android:text=".IMG" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_cv_vdo"
+                style="@style/Search_State_Tag"
+                app:cardBackgroundColor="@color/colorGrey3"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/search_tv_vdo"
+                    style="@style/Search_State_Tag_Text"
+                    android:text=".VDO" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#88888888" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true" />
+
+        <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/spacer"
+            android:layout_centerHorizontal="true"
+            app:fabColor="@color/colorGrey3"
+            app:fabElevation="5dp"
+            app:fabType="roundedSquare">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/search_bt_mic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:src="@drawable/ic_baseline_mic_none_24"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="4dp"
+                    android:background="@color/colorGrey5" />
+
+                <ImageView
+                    android:id="@+id/search_bt_keyboard"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@color/colorGrey3"
+                    android:src="@drawable/ic_outline_keyboard_24" />
+            </LinearLayout>
+
+        </com.robertlevonyan.views.customfloatingactionbutton.FloatingActionLayout>
+
+        <TextView
+            android:id="@+id/search_try_again"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorGrey1"
+            android:gravity="center"
+            android:text="Try Another Word"
+            android:textSize="36dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:clipToPadding="false"
+            android:padding="8dp"
+            tools:listitem="@layout/search_item_pdf"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/search_progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>
+
+
